@@ -22,7 +22,7 @@ pub fn main() -> Result<(),Error> {
     for line in input.lines() {
         for cap in re.captures_iter(line){
             if(line.contains("Guard #")) {
-                latestGuardNumber = cap[7].parse().expect("asdf");
+                latestGuardNumber = cap[7].parse().expect("asdf"); 
             }
             if(line.contains("falls")) {
                 latestStartMin = cap[5].parse().expect("asdf");
