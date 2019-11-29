@@ -14,6 +14,7 @@ pub fn main() -> Result<(),Error> {
     let mut input = String::new();
     file.read_to_string(&mut input)?;
     let mut grid = Grid::new();
+    ;
     let re = Regex::new(r"\[(\d+)-(\d+)-(\d+) (\d+):(\d+)\]( Guard #(\d+))?").unwrap();
     let mut latestGuardNumber:i32 = 0;
     let mut latestStartMin:i32 = 0;
