@@ -20,7 +20,7 @@ pub fn main() -> Result<(),Error> {
     let mut latestWokeMin:i32 = 0;
 
     for line in input.lines() {
-        for cap in re.captures_iter(line){
+        for cap in re.captures_iter(line) {
             if(line.contains("Guard #")) {
                 latestGuardNumber = cap[7].parse().expect("asdf"); 
             }
