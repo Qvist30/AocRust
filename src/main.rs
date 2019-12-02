@@ -1,4 +1,4 @@
-mod Day1_2019;
+mod Day2_2019;
 fn main() {
-    Day1_2019::main();
+    Day2_2019::main();
 }
